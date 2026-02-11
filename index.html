@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <!-- logo -->
+
+          <a href="./" class="logo">
+            <div class="thumb">
+              <img class="logo-img" src="./img/logo (1).jpg" alt="" />
+            </div>
+          </a>
+
+          <!-- navigation -->
+
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="#about">about</a>
+            </li>
+            <li class="item">
+              <a href="#gallery">gallery</a>
+            </li>
+            <li class="item">
+              <a href="#schelde">schelde</a>
+            </li>
+            <li class="item">
+              <a href="#contacts">contacts</a>
+            </li>
+          </ul>
+
+          <button type="button" class="modal__btn">
+            <svg class="modal__btn--img">
+              <use
+                href="./img/burger-btn-white.svg"
+                width="40"
+                height="40"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- mobile menu -->
+
+    <div class="mobile-menu">
+      <button class="modal__btn--close" type="button">
+        <svg class="modal__btn--img">
+          <use href="./img/close.svg" width="40" height="40"></use>
+        </svg>
+      </button>
+
+      <ul class="site-nav-mobile list">
+        <li class="item__mobile">
+          <a href="#about">about</a>
+        </li>
+        <li class="item__mobile">
+          <a href="#gallery">gallery</a>
+        </li>
+        <li class="item__mobile">
+          <a href="#schelde">schelde</a>
+        </li>
+        <li class="item__mobile">
+          <a href="#contacts">contacts</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- main -->
+
+    <main>
+      <!-- hero -->
+
+      <section class="hero" id="hero">
+        <div class="container">
+          <h1 class="mainTitle">Jaguar kickboxing club</h1>
+        </div>
+      </section>
+
+      <!-- about -->
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="title">about us</h2>
+          <div class="flexContainer">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste
+              facilis quaerat, et debitis beatae, ullam quasi quod nobis
+              perferendis nam deserunt animi quas, cumque laudantium odit
+              molestias. Voluptas rem atque, expedita sequi laudantium debitis
+              nesciunt similique sunt nam ipsum quis minima quasi repellendus
+              consectetur natus. Sed possimus impedit incidunt.
+            </p>
+            <video
+              class="video"
+              src="./video/IMG_2278.MOV"
+              poster=""
+              min-width="320"
+              height="420"
+              controls
+              autoplay
+              loop
+              preload="auto"></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="title white">gallery</h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./img/hero-bg-img.jpg" alt="" width="350" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/hero-bg-img.jpg" alt="" width="350" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/hero-bg-img.jpg" alt="" width="350" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- schelde -->
+
+      <section class="schelde" id="schelde"></section>
+
+      <!-- contacts -->
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="title white">contacts</h2>
+          <div class="flexContainer">
+            <div class="addres">
+              <a
+                class="addres__link"
+                href="https://maps.app.goo.gl/LmM2vHmBsnuZHhoEA"
+                target="_blank"
+                >addres: Longford</a
+              >
+              <a
+                class="addres__link"
+                href="mailto:mail@gmail.com"
+                target="_blank"
+                >email: mail@gmail.com</a
+              >
+              <a class="addres__link" href="tel:+353870000000" target="_blank"
+                >tel: +353870000000</a
+              >
+            </div>
+            <div class="map">
+              <iframe
+                class="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9441.730820413854!2d-7.81073582001486!3d53.728367753145825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485dd39df75e1c2d%3A0x1bb9a25d94138dff!2z0KLQsNGD0L3Qv9Cw0YDQutGBLCDQm9C-0L3Qs9GE0L7RgNC0LCBOMzkgRDQzOA!5e0!3m2!1sru!2sie!4v1770809779324!5m2!1sru!2sie"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footerFlexContainer">
+          <a href="./" class="logo">
+            <div class="thumb">
+              <img class="logo-img" src="./img/logo (1).jpg" alt="" />
+            </div>
+          </a>
+          <div class="addres__footer">
+            <a
+              class="addres__link black"
+              href="https://maps.app.goo.gl/LmM2vHmBsnuZHhoEA"
+              target="_blank"
+              >addres: Longford</a
+            >
+            <a
+              class="addres__link black"
+              href="mailto:mail@gmail.com"
+              target="_blank"
+              >email: mail@gmail.com</a
+            >
+            <a
+              class="addres__link black"
+              href="tel:+353870000000"
+              target="_blank"
+              >tel: +353870000000</a
+            >
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="40" height="40">
+                  <use
+                    href="./img/facebook-svgrepo-com (1).svg"
+                    width="40"
+                    height="40"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="40" height="40">
+                  <use
+                    href="./img/instagram-svgrepo-com (1).svg"
+                    width="40"
+                    height="40"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="40" height="40">
+                  <use
+                    href="./img/telegram-svgrepo-com.svg"
+                    width="40"
+                    height="40"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </body>
+</html>
